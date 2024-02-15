@@ -1,0 +1,8 @@
+﻿  GameEngine.cpp
+  HealingPotion.cpp
+  InventoryItem.cpp
+  Item.cpp
+  LivingCreature.cpp
+  Generating Code...
+MSVCRTD.lib(exe_main.obj) : error LNK2019: unresolved external symbol main referenced in function "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ)
+E:\VGD\JonasM\Yesy\x64\Debug\Yesy.exe : fatal error LNK1120: 1 unresolved externals
