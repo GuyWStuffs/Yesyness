@@ -9,7 +9,7 @@ using namespace std;
 class GameEngine
 {
 public:
-    static string Version = "0.0.5";
+    static const string* Version = new string("0.0.5");
     static Monster* _currentMonster;
 
     static void Initialize()
