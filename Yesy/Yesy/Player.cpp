@@ -69,7 +69,7 @@ public:
         if (CurrentLocation -> LocationToNorth != nullptr)
         {
             MoveTo(CurrentLocation -> LocationToNorth);
-            Source.DisplayCurrentLocation();
+            Source::DisplayCurrentLocation();
         }
         else
         {
@@ -269,7 +269,7 @@ public:
             }
 
             // If no items were randomly selected, then add the default loot item(s).
-            if (lootedItems.Count == 0)
+            if (lootedItems.size() == 0)
             {
                 for(LootItem lootItem : _currentMonster -> LootTable)
                 {
@@ -332,7 +332,7 @@ public:
     } //UserWeapon
     void UpdateWeapons()
     {
-        Weapons -> Clear();
+        Weapons -> clear();
         for(InventoryItem inventoryItem : this -> Inventory)
         {
             if (inventoryItem.Details is Weapon)
